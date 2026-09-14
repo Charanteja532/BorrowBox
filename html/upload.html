@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Your Item | BorrowBox</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            Borrow<span>Box</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#">Browse</a>
+            <a href="#">🛒 Basket</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </div>
+    </nav>
+
+    <main class="upload-page">
+
+        <div class="upload-header">
+            <p class="section-tag">SHARE WITH YOUR COMMUNITY</p>
+            <h1>List your item</h1>
+            <p>Have something others might need? Put it on BorrowBox.</p>
+        </div>
+
+        <div class="upload-container">
+
+            <div class="upload-image-box">
+                <div class="image-icon">📷</div>
+                <h3>Add an item photo</h3>
+                <p>Upload a clear photo of the item</p>
+
+                <input type="file" id="itemImage" accept="image/*">
+
+                <label for="itemImage" class="upload-button">
+                    Choose Image
+                </label>
+
+                <div id="imagePreview"></div>
+            </div>
+
+            <div class="upload-form">
+
+                <form id="uploadForm">
+
+                    <label>Item Name</label>
+                    <input
+                        type="text"
+                        id="itemName"
+                        placeholder="e.g. Canon Camera"
+                        required
+                    >
+
+                    <label>Category</label>
+                    <select id="itemCategory" required>
+                        <option value="">Select category</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Camera">Camera</option>
+                        <option value="Tools">Tools</option>
+                        <option value="Sports">Sports</option>
+                        <option value="Books">Books</option>
+                        <option value="Others">Others</option>
+                    </select>
+
+                    <div class="form-row">
+
+                        <div>
+                            <label>Price</label>
+                            <input
+                                type="number"
+                                id="itemPrice"
+                                placeholder="₹ Price"
+                                min="1"
+                                required
+                            >
+                        </div>
+
+                        <div>
+                            <label>Duration</label>
+                            <select id="itemDuration" required>
+                                <option value="">Select</option>
+                                <option value="3 hrs">3 hrs</option>
+                                <option value="6 hrs">6 hrs</option>
+                                <option value="1 day">1 day</option>
+                                <option value="2 days">2 days</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <label>Location</label>
+                    <input
+                        type="text"
+                        id="itemLocation"
+                        placeholder="e.g. Madhapur"
+                        required
+                    >
+
+                    <label>Description</label>
+                    <textarea
+                        id="itemDescription"
+                        placeholder="Tell people a little about your item..."
+                        rows="4"
+                    ></textarea>
+
+                    <button type="submit" class="publish-button">
+                        Publish Item
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="../javascript/script.js"></script>
+
+</body>
+</html>
