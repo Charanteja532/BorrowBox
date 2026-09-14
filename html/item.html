@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Details | BorrowBox</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Borrow<span>Box</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#">Browse</a>
+            <a href="basket.html">🛒 Basket</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </div>
+
+    </nav>
+
+    <main class="item-page">
+
+        <div class="item-details-container">
+
+            <div class="item-details-image">
+
+                <img id="itemImage" src="" alt="Item">
+
+                <span class="item-status">
+                    Available
+                </span>
+
+            </div>
+
+            <div class="item-details-info">
+
+                <p class="item-category" id="itemCategory"></p>
+
+                <h1 id="itemName"></h1>
+
+                <p class="item-location" id="itemLocation"></p>
+
+                <div class="item-price-box">
+
+                    <div>
+                        <strong id="itemPrice"></strong>
+                        <span id="itemDuration"></span>
+                    </div>
+
+                    <p>
+                        Borrowing price
+                    </p>
+
+                </div>
+
+                <div class="item-description">
+
+                    <h3>
+                        About this item
+                    </h3>
+
+                    <p id="itemDescription"></p>
+
+                </div>
+
+                <div class="item-owner">
+
+                    <div class="owner-avatar">
+                        👤
+                    </div>
+
+                    <div>
+                        <p>Listed by</p>
+                        <strong id="itemOwner"></strong>
+                    </div>
+
+                </div>
+
+                <div class="item-actions">
+
+                    <button class="basket-button">
+                        🛒 Add to Basket
+                    </button>
+
+                    <button class="borrow-button">
+                        Borrow Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="../javascript/script.js"></script>
+
+</body>
+</html>

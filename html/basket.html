@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket | BorrowBox</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Borrow<span>Box</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#">Browse</a>
+            <a href="basket.html">🛒 Basket</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </div>
+
+    </nav>
+
+    <main class="basket-page">
+
+        <div class="basket-header">
+            <p class="section-tag">YOUR ITEMS</p>
+            <h1>Your Basket</h1>
+            <p>Items you want to borrow.</p>
+        </div>
+
+        <div class="basket-container">
+
+            <div class="basket-items" id="basketItems">
+
+            </div>
+
+            <div class="basket-summary">
+
+                <h2>Basket Summary</h2>
+
+                <div class="summary-row">
+                    <span>Items</span>
+                    <strong id="basketCount">0</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>Total</span>
+                    <strong id="basketTotal">₹0</strong>
+                </div>
+
+                <button class="borrow-all-button">
+                    Borrow Selected
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="../javascript/script.js"></script>
+
+</body>
+</html>
